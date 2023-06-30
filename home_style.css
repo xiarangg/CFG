@@ -1,0 +1,89 @@
+body {
+  background-color: white;
+}
+
+ul {
+  text-align: right;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+}
+
+li {
+  display: inline;
+}
+
+button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+  color: white;
+  font-weight: bolder;
+}
+
+.navi {
+  padding: 20px 0;
+}
+
+.navi li + li:before {
+    content: " | ";
+    padding: 0 10px;
+}
+
+.desc {
+  margin: 50px 0;
+  font-size: large;
+  padding: 2rem;
+}
+
+.overlay {
+  position: absolute;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.video-container {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-container video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.video-container .caption {
+  z-index: 1;
+  position: absolute;
+  text-align: left;
+  padding-left: 5rem;
+  bottom: 20%;
+  text-shadow: 2px 2px 1px black;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media (max-width: 800px) {
+  .video-container {
+    max-height: 30vh;
+  }
+}
