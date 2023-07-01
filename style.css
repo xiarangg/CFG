@@ -6,21 +6,51 @@ ul {
   text-align: right;
   list-style-type: none;
   margin: 0;
+  padding: 0 20px 0 0;
   overflow: hidden;
+  display: inline-block;
 }
 
 li {
   display: inline;
 }
 
-button {
+li a.odd {
+  color: grey;
+  text-decoration: none;
+}
+
+li a.even {
+  color: darkgray;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+.button_cat {
   width: 60px;
   height: 60px;
+  border: 5px solid #c06c84;
   border-radius: 50%;
+  transition: all 300ms ease-in-out;
+}
+
+.button_cat:hover {
+  background-color: #8cae8a;
+  color: #45171d;
+  border-color: #f5b444;
+}
+
+.button_contact {
+  float: right;
 }
 
 h1 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 20px 0 0 0;
+  color: rgb(122, 122, 122);
 }
 
 h2 {
@@ -30,31 +60,34 @@ h2 {
 
 .navi {
   padding: 20px 0;
+  text-align: right;
 }
 
 .navi li + li:before {
-    content: " | ";
-    padding: 0 10px;
+  content: " | ";
+  padding: 0 10px;
 }
 
 .desc {
   margin: 50px 0;
   font-size: large;
-  padding: 2rem;
 }
 
-.overlay {
-  position: absolute;
-  display: flex;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  flex-direction: row;
-  margin-bottom: 10px;
+.cat_box {
+  padding: 0;
+}
+
+.cat {
+  max-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.cat_desc {
+  background: black;
+  color: white;
+  text-align: justify;
+  padding: 50px;
 }
 
 .video-container {
@@ -79,11 +112,55 @@ h2 {
   padding-left: 5rem;
   bottom: 20%;
   text-shadow: 2px 2px 1px black;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
-@media (max-width: 800px) {
+.footer {
+  background: rgb(27, 27, 27);
+  color: white;
+  margin: 100px 0 0 0;
+  padding: 20px 0 50px 0;
+}
+
+.social {
+  font-size: xx-large;
+  text-align: center;
+  padding: 20px 0;
+}
+
+@media (max-width: 767.98px) {
   .video-container {
     max-height: 30vh;
+  }
+}
+
+@media (min-width: 991.98px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .cat {
+    max-width: 50%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .cat_desc {
+    max-width: 50%;
+    margin: 0 auto;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+  }
+
+  .sec_to_thr {
+    order: 3;
+  }
+  .thr_to_sec {
+    margin: 40px 0 0 0;
+    order: 2;
   }
 }

@@ -1,112 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cat Adoption</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-<body>
-    
-
-
-
-
-
-
+  </head>
+  <body>
     <div class="container">
-        <div class="row navi">
-            <div class="col-lg-6 col-md-6 col-xl-6">
-                <h1>GROUP 5</h1>
-            </div>
-            <div class="col-lg-6 col-md-6 col-xl-6">
-            <ul>
-            <li>
-                Link 1
-            </li>
-            <li>
-                Link 2
-            </li>
-            <li>
-                <button>
-                    ✉️
-                </button>
-            </li>
-        </ul>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-xl-6">
+          <h1>GROUP 5</h1>
         </div>
+        <div class="navi col-lg-6 col-md-6 col-xl-6">
+          <ul>
+            <li><a class="odd" href="https://google.co.uk">Link 1</a></li>
+            <li><a class="even" href="https://google.co.uk">Link 2</a></li>
+            <li><a class="odd" href="https://google.co.uk">Link 3</a></li>
+          </ul>
+          <button class="button_cat">✉️</button>
         </div>
+      </div>
+    </div>
+
+    <div class="video-container">
+      <video autoplay muted loop>
+        <source src="assets/pexels-pixabay-854982-1280x720-25fps.mp4" />
+      </video>
+      <div class="caption">
+        <h2>Cat Adoption within the UK</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-4"></div>
+      <div class="desc text-center col-sm-12 col-lg-12 col-md-12 col-xl-4">
+        There are lots of different things we can do with this grid system,
+        depending on what we hope to build and how we wish to style it. You can
+        see a detailed list of example container uses column structure on the
+        bootstrap website.
+        <p></p>
+        <h1 class="display-3">Display 2</h1>
+      </div>
+      <div class="col-xl-4"></div>
+      <div class="row">
+        <div class="col-lg-3 col-xl-3"></div>
+        <div class="cat_box col-sm-12 col-md-12 col-lg-3 col-xl-3">
+          <img class="cat" src="assets/IMG_20230219_1118012.jpg" />
         </div>
-<div class="video-container">
-  <video autoplay muted loop>
-    <source src="assets/pexels-pixabay-854982-1280x720-25fps.mp4" />
-  </video>
-  <div class="caption">
-    <h2>Cat adoption within the UK</h2>
-  </div>
-</div>
-
-<div class="row">
-    <div class="col-sm-12 col-lg-12 col-md-12 col-xl-4">
-    </div>
-    <div class="col-sm-12 col-lg-12 col-md-12 col-xl-4 text-center desc">
-        There are lots of different things we can do with this grid system, depending on what we hope to build and how we wish to style it. You can see a detailed list of example container uses column structure on the bootstrap website.
-    </div>
-    <div class="col-lg-4 col-md-4 col-xl-4"></div>
-</div>
-
-<div class="row">
-    <div class="col-md-3 col-lg-3 col-xl-3"></div>
-    <div class="col-md-3 col-lg-3 col-xl-3">
-        <img src="assets/IMG_20230219_111801.jpg">
-    </div>
-    <div class="col-md-3 col-lg-3 col-xl-3">
-        fgjsgnxfgnxfgnxgf
-    </div>
-    <div class="col-md-3 col-lg-3 col-xl-3"></div>
-</div>
-
-
-
-
-<div class="row">
-            <div class="col-lg-4 col-md-4 col-xl-4">
-                There are lots of different things we can do with this grid system, depending on what
-we hope to build and how we
-wish to style it. You can see a
-detailed list of example
-container uses column
-structure on the bootstrap
-website.
-            </div>
-            <div class="col-lg-2 col-md-2 col-xl-2">
-                Contact
-                <p>
-                <a href="http://google.co.uk">Contact</a>
-                </p>
-            </div>
-            <div class="col-lg-2 col-md-2 col-xl-2">
-                Contact
-                <p>
-                <a href="http://google.co.uk">Contact</a>
-                </p>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xl-4">
-                There are lots of different things we can do with this grid system, depending on what
-we hope to build and how we
-wish to style it. You can see a
-detailed list of example
-container uses column
-structure on the bootstrap
-website.
-            </div>
+        <div class="cat_desc col-sm-12 col-md-12 col-lg-3 col-xl-3">
+          There are lots of different things we can do with this grid system,
+          depending on what we hope to build and how we wish to style it. You
+          can see a detailed list of example container uses column structure on
+          the bootstrap website
         </div>
+        <div class="col-lg-3 col-xl-3"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3"></div>
+        <div
+          class="sec_to_thr cat_desc col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3"
+        >
+          There are lots of different things we can do with this grid system,
+          depending on what we hope to build and how we wish to style it. You
+          can see a detailed list of example container uses column structure on
+          the bootstrap website.
+        </div>
+        <div class="cat_box thr_to_sec col-sm-12 col-md-12 col-lg-3 col-xl-3">
+          <img class="cat" src="assets/IMG_20230219_1118011.jpg" />
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3"></div>
     </div>
 
+    <div class="row footer">
+      <div class="col-lg-4 col-md-4 col-xl-4">
+        There are lots of different things we can do with this grid system,
+        depending on what we hope to build and how we wish to style it. You can
+        see a detailed list of example container uses column structure on the
+        bootstrap website.
+        
+        <div class="social">
+          <a href="https://facebook.com"><i class="bi bi-facebook"></i></a>
+          <a href="https://instagram.com"><i class="bi bi-instagram"></a></i> 
+          <a href="https://twitter.com"><i class="bi bi-twitter"></i></a></div>
+      </div>
+      <div class="col-lg-2 col-md-2 col-xl-2">
+        <h4>Contact</h4>
+        <p>
+          <a href="http://google.co.uk">Contact</a>
+        </p>
+      </div>
+      <div class="col-lg-2 col-md-2 col-xl-2">
+        <h4>Contact</h4>
+        <p>
+          <a href="http://google.co.uk">Contact</a>
+        </p>
+      </div>
+      <div class="col-lg-4 col-md-4 col-xl-4">
+        <h4>Get in contact</h4>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Your email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="name@example.com"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Subject</label
+          >
+          <input
+            type="subject"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Subject title"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Your message</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+        </div>
+        <button type="button" class="btn btn-outline-primary button_contact">Submit</button>
+      </div>
+    </div>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
 </html>
